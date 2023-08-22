@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Roboto', sans-serif;
+  --ff-texting: 'Roboto', sans-serif;
+
+  --fc-button: #02799D;
+  --fc-text: white;
+  --fc-menu: #8D8D99;
+
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/images/universe-1.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  padding-top: 4rem;
+  padding-left: 7.2rem;
+  font-family: var(--ff-texting);
+  font-size: 2.1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+header a {
+  color: var(--fc-menu);
+  padding-right: 3.2rem;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--fc-text);
+  font-weight: bold;
+}
+
+header a:active {
+  color: var(--fc-text);
+  font-weight: bold;
+}
+
+#homeBtn.active,
+#universeBtn.active,
+#exploreBtn.active {
+  color: var(--fc-text);
+  font-weight: bold;
+}
+
+/*.homeBg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.homeBg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}*/
+
+.home {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home button {
+  border-radius: 0.5rem;
+  border-color: white;
+  background: none;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+}
+
+.home a {
+  color: var(--fc-text);
+  text-decoration: none;
+}
+
+.home a:hover,
+.home button:hover {
+  background-color: white;
+  color: var(--fc-button);
+}
+
+.explore,
+.universe {
+  width: 64.8rem;
+  padding-top: 6.3rem;
+  padding-left: 10.2rem;
+}
+
+.explore h1,
+.universe h1 {
+  margin-bottom: 1.6rem;
+}
+
+h1 {
+  font-family: var(--ff-heading);
+  font-weight: bold;
+  font-size: 4.8rem;
+  color: var(--fc-text);
+}
+
+p {
+  font-family: var(--ff-texting);
+  font-size: 1.8rem;
+  color: var(--fc-text);
+  line-height: 160%;
+}
